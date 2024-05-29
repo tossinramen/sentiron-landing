@@ -6,6 +6,12 @@ import NavMobile from './components/NavMobile';
 import Experience from './components/Experience';
 import Video from './components/Video';
 import Headsets from './components/Headsets';
+import Testimonial from './components/Testimonial';
+import Explore from './components/Explore';
+
+//import animate on scroll 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
   const [navMobile, setNavMobile] = useState(false);
@@ -20,6 +26,8 @@ const App = () => {
       <Experience />
       <Video />
       <Headsets />
+      <Testimonial />
+      <Explore />
     </div>
   );
 };
