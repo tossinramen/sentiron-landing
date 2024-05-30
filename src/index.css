@@ -4,7 +4,10 @@
 
 @layer base {
   body {
-    @apply font-secondary bg-body text-white relative leading-relaxed font-extralight;
+    @apply font-secondary bg-body relative leading-relaxed font-extralight;
+    background-color: #ece7e1;
+    color: black; /* Change font color to black */
+    font-family: "All Round Gothic", sans-serif; /* Set font family */
   }
   h1,
   h2,
@@ -13,14 +16,67 @@
   h5,
   h6 {
     @apply font-primary;
+    color: black; /* Change font color to black */
   }
   a {
     @apply text-[15px] font-medium;
+    color: black; /* Change font color to black */
   }
   .nav-link {
     @apply after:w-6 after:h-1 after:absolute after:left-0 after:-bottom-2 after:rounded-full after:bg-transparent after:hover:bg-[#b936f5] after:transition-all after:duration-300 relative;
   }
   .btn {
-    @apply font-medium h-12 px-8 bg-gradient-to-r from-[#b936f5] to-[#f1006c] rounded text-[15px] hover:bg-gradient-to-l hover:from-[#b936f5] hover:to-[#f1006c] outline-none flex items-center justify-center cursor-pointer;
+    @apply font-medium h-12 px-8 rounded text-[15px] outline-none flex items-center justify-center cursor-pointer;
+    background: linear-gradient(to right, #2b2b2b, #8f8167); /* Update button gradient */
   }
+}
+
+
+.polaroid {
+  position: relative;
+  width: fit-content;
+  padding: 10px;
+  background: white;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  transform: rotate(-5deg); /* Slanted effect */
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg); /* Straighten on hover */
+}
+
+.polaroid-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.polaroid-small {
+  position: relative;
+  width: fit-content;
+  padding: 5px;
+  background: white;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: transform 0.3s ease;
+  width: 160px; /* Smaller size for additional images */
+}
+
+.polaroid-small:hover {
+  transform: rotate(0deg); /* Straighten on hover */
+}
+
+.rotate-3 {
+  transform: rotate(3deg); /* Slight rotation */
+}
+
+.rotate--2 {
+  transform: rotate(-2deg); /* Slight rotation */
+}
+
+.rotate-1 {
+  transform: rotate(1deg); /* Slight rotation */
 }

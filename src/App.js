@@ -5,7 +5,7 @@ import Header from './components/Header';
 import NavMobile from './components/NavMobile';
 import Experience from './components/Experience';
 import Video from './components/Video';
-import Headsets from './components/Headsets';
+import Services from './components/Services';
 import Testimonial from './components/Testimonial';
 import Explore from './components/Explore';
 
@@ -34,7 +34,7 @@ const App = () => {
       </div>
       <Experience />
       <Video />
-      <Headsets />
+      <Services />
       <Testimonial />
       <Explore />
     </div>
