@@ -47,7 +47,7 @@
   transform: rotate(0deg); /* Straighten on hover */
 }
 
-.polaroid-img {
+.polaroid-img-large {
   display: block;
   width: 100%;
   height: auto;
@@ -79,4 +79,45 @@
 
 .rotate-1 {
   transform: rotate(1deg); /* Slight rotation */
+}
+
+.polaroid-medium {
+  position: relative;
+  width: fit-content;
+  padding: 10px;
+  background: white;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+
+.polaroid-medium:hover {
+  transform: rotate(0deg); /* Straighten on hover */
+}
+
+.polaroid-img-medium {
+  display: block;
+  width: 200px; /* Medium size */
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.tape {
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background: #f9ffc9; /* Tape color */
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-10deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.polaroid-medium:nth-child(2) .tape {
+  transform: translateX(-50%) rotate(10deg);
+}
+
+.bg-custom-brown {
+  background-color: #8f8167;
 }

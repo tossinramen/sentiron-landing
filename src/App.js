@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react';
 import Banner from './components/Banner';
 import Header from './components/Header';
 import NavMobile from './components/NavMobile';
-import Experience from './components/Experience';
-import Video from './components/Video';
+import Mission from './components/Mission';
+import Download from './components/Download';
 import Services from './components/Services';
-import Testimonial from './components/Testimonial';
+import FAQ from './components/FAQ';
 import Explore from './components/Explore';
 
 //import animate on scroll 
@@ -32,10 +32,10 @@ const App = () => {
       <div className={`${navMobile ? 'right-0' : '-right-full'} fixed top-0 bottom-0 w-48 transition-all`}>
         <NavMobile setNavMobile={setNavMobile} />
       </div>
-      <Experience />
-      <Video />
+      <Mission />
+      <Download />
       <Services />
-      <Testimonial />
+      <FAQ />
       <Explore />
     </div>
   );
