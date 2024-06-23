@@ -4,10 +4,11 @@
 
 @layer base {
   body {
-    @apply font-secondary bg-body relative leading-relaxed font-extralight;
-    background-color: #ece7e1;
-    color: black; /* Change font color to black */
-    font-family: "All Round Gothic", sans-serif; /* Set font family */
+    @apply font-secondary bg-body relative leading-relaxed;
+    background-color: #FCF9ED; /* Light yellow */
+    color: #2B2B2B; /* Blackish color */
+    font-family: 'acumin-pro', sans-serif; 
+    font-weight: bold; /* Set default font weight to bold */
   }
   h1,
   h2,
@@ -16,108 +17,84 @@
   h5,
   h6 {
     @apply font-primary;
-    color: black; /* Change font color to black */
+    color: #2B2B2B; /* Blackish color */
+    font-family: 'bodoni-urw', serif; /* Bodoni URW for headings */
   }
   a {
-    @apply text-[15px] font-medium;
-    color: black; /* Change font color to black */
+    @apply text-[16px] font-medium;
+    color: #2B2B2B; /* Blackish color */
+    font-family: 'acumin-pro', sans-serif; 
+    font-weight: bold; /* Explicitly set font weight to bold */
   }
   .nav-link {
-    @apply after:w-6 after:h-1 after:absolute after:left-0 after:-bottom-2 after:rounded-full after:bg-transparent after:hover:bg-[#b936f5] after:transition-all after:duration-300 relative;
+    @apply after:w-6 after:h-1 after:absolute after:left-0 after:-bottom-2 after:rounded-full after:bg-transparent after:hover:bg-[#90B3F5] after:transition-all after:duration-300 relative;
   }
   .btn {
-    @apply font-medium h-12 px-8 rounded text-[15px] outline-none flex items-center justify-center cursor-pointer;
-    background: linear-gradient(to right, #2b2b2b, #8f8167); /* Update button gradient */
+    @apply font-bold h-12 px-8 text-[15px] outline-none flex items-center justify-center cursor-pointer;
+    background-color: #90B3F5; /* Blue */
+    color: white; 
+    border-radius: 9999px; 
+    font-family: 'acumin-pro', sans-serif; 
+    font-weight: bold; /* Explicitly set font weight to bold */
   }
 }
 
-
-.polaroid {
-  position: relative;
-  width: fit-content;
-  padding: 10px;
-  background: white;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-  transform: rotate(-5deg); /* Slanted effect */
-  margin: 20px auto;
-  transition: transform 0.3s ease;
+@layer components {
+  .text-40 {
+    font-size: 40px;
+  }  
+  .font-all-round-gothic {
+    font-family: 'all-round-gothic', sans-serif;
+    font-weight: bold; 
+  }
+  .section-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+  }
 }
 
-.polaroid:hover {
-  transform: rotate(0deg); /* Straighten on hover */
+@layer base {
+  .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #90B3F5;
+    transition: width 0.3s;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
 }
 
-.polaroid-img-large {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
+@layer base {
+  .font-bodoni-light {
+    font-family: 'bodoni-urw-light', serif; /* Ensure this matches the loaded font */
+    font-weight: 300; /* Adjust based on the actual font weight */
+  }
 }
 
-.polaroid-small {
-  position: relative;
-  width: fit-content;
-  padding: 5px;
-  background: white;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  transition: transform 0.3s ease;
-  width: 160px; /* Smaller size for additional images */
+.nav-link a {
+  color: #2B2B2B; /* Blackish color */
+  font-family: 'acumin-pro', sans-serif;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 9999px; /* Full-rounded border for oval shape */
+  transition: background-color 0.3s ease;
 }
 
-.polaroid-small:hover {
-  transform: rotate(0deg); /* Straighten on hover */
+.inactive-nav-link {
+  background-color: transparent;
 }
 
-.rotate-3 {
-  transform: rotate(3deg); /* Slight rotation */
+.active-nav-link {
+  background-color: #FFE184; /* Highlight color */
+  color: #2B2B2B; /* Keep text black */
 }
 
-.rotate--2 {
-  transform: rotate(-2deg); /* Slight rotation */
-}
-
-.rotate-1 {
-  transform: rotate(1deg); /* Slight rotation */
-}
-
-.polaroid-medium {
-  position: relative;
-  width: fit-content;
-  padding: 10px;
-  background: white;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px auto;
-  transition: transform 0.3s ease;
-}
-
-.polaroid-medium:hover {
-  transform: rotate(0deg); /* Straighten on hover */
-}
-
-.polaroid-img-medium {
-  display: block;
-  width: 200px; /* Medium size */
-  height: auto;
-  border: 1px solid #ddd;
-}
-
-.tape {
-  position: absolute;
-  width: 60px;
-  height: 20px;
-  background: #f9ffc9; /* Tape color */
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-10deg);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.polaroid-medium:nth-child(2) .tape {
-  transform: translateX(-50%) rotate(10deg);
-}
-
-.bg-custom-brown {
-  background-color: #8f8167;
+.nav-link a:hover {
+  background-color: #90B3F5; /* Hover color */
+  color: white; /* Text color on hover */
 }

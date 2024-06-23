@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // import components
-import Logo from '../assets/img/logo.png';
 import Nav from './Nav';
 
 // import icons 
@@ -9,18 +9,24 @@ import { HiMenu } from 'react-icons/hi';
 
 const Header = ({ setNavMobile }) => {
   return (
-    <header className='py-6' data-aos='fade-down' data-aos-duration='2000' data-aos-delay='900'>
-      <div className='container mx-auto'>
+    <header 
+      className='py-6 w-full fixed top-0 left-0 z-50 shadow-md' 
+      style={{ backgroundColor: '#FCF9ED' }}
+      data-aos='fade-down' 
+      data-aos-duration='2000' 
+      data-aos-delay='900'
+    >
+      <div className='w-full px-4 lg:px-8'>
         <div className='flex items-center justify-between'>
           {/* logo */}
-          <a href='#' className='ml-0 lg:-ml-11'> {/* Adjusted margin to move logo left */}
-            <img className='h-[120px]' src={Logo} alt='' /> {/* Updated height */}
-          </a>
+          <Link to="/" className='ml-4 lg:ml-8'> 
+            <span className='font-all-round-gothic text-40'>SENTIRON</span>
+          </Link>
           {/* nav */}
           <Nav />
           {/* nav mobile btn */}
           <HiMenu onClick={() => setNavMobile(true)} 
-          className='lg:hidden text-3xl text-white cursor-pointer' /> {/* Corrected text size class to text-3xl */}
+          className='lg:hidden text-3xl text-black cursor-pointer' />
         </div>
       </div>
     </header>
