@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Banner from './components/Banner';
@@ -8,6 +7,7 @@ import CoreMission from './components/CoreMission';
 import Explore from './components/Explore';
 import AboutUs from './components/AboutUs';
 import PrivacyPolicy from './components/PrivacyPolicy'; // Import the Privacy Policy component
+import ComingSoon from './components/ComingSoon'; // Import the ComingSoon component
 
 // Import animate on scroll 
 import Aos from 'aos';
@@ -38,6 +38,7 @@ const App = () => {
           </>} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Add Privacy Policy route */}
+          <Route path="/coming-soon" element={<ComingSoon />} /> {/* Add ComingSoon route */}
           {/* Add other routes as needed */}
         </Routes>
       </div>
