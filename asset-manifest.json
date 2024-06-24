@@ -1,26 +1,22 @@
 {
   "files": {
-    "main.css": "/sentiron-landing/static/css/main.0cf4c450.css",
-    "main.js": "/sentiron-landing/static/js/main.2f4b0f91.js",
-    "static/media/banner-img.png": "/sentiron-landing/static/media/banner-img.a90907955a08451423db.png",
-    "static/media/makeup.png": "/sentiron-landing/static/media/makeup.028f9c495445a05f41fa.png",
-    "static/media/explore.png": "/sentiron-landing/static/media/explore.6c849f32d7e49ad17089.png",
-    "static/media/styling.png": "/sentiron-landing/static/media/styling.541e722961175b3e82df.png",
-    "static/media/wardrobe.png": "/sentiron-landing/static/media/wardrobe.6005a161825937862bf6.png",
-    "static/media/banner-img3.png": "/sentiron-landing/static/media/banner-img3.c6c0a5ec84ab64f7244a.png",
-    "static/media/banner-img2.png": "/sentiron-landing/static/media/banner-img2.cca525d38c06c43de341.png",
-    "static/media/skincare.png": "/sentiron-landing/static/media/skincare.4f4d2c53b8022132abaa.png",
-    "static/media/unique1.png": "/sentiron-landing/static/media/unique1.cce59f7ca62463397e17.png",
-    "static/media/unique2.png": "/sentiron-landing/static/media/unique2.3899034623f4d1e961af.png",
-    "static/media/banner-img4.png": "/sentiron-landing/static/media/banner-img4.cfc56bb6d3b89f032d4c.png",
-    "static/media/circle.png": "/sentiron-landing/static/media/circle.03e412ffb583c7326b18.png",
-    "static/media/download.png": "/sentiron-landing/static/media/download.a6a1296b610d679a522f.png",
+    "main.css": "/sentiron-landing/static/css/main.33e9f60f.css",
+    "main.js": "/sentiron-landing/static/js/main.a360d47f.js",
+    "static/media/background-image.jpeg": "/sentiron-landing/static/media/background-image.9a7fce87945ba0c11f90.jpeg",
+    "static/media/banner-img.png": "/sentiron-landing/static/media/banner-img.a851149ea58a98cf3b59.png",
+    "static/media/flower.png": "/sentiron-landing/static/media/flower.2db461f9d618a4af7059.png",
+    "static/media/founder.png": "/sentiron-landing/static/media/founder.78cb225fba1cfcd41e09.png",
+    "static/media/unique1.png": "/sentiron-landing/static/media/unique1.6a5a5ea3410d518b403b.png",
+    "static/media/banner-img2.png": "/sentiron-landing/static/media/banner-img2.da9ccb44257e077bf780.png",
+    "static/media/sentiron-circle.png": "/sentiron-landing/static/media/sentiron-circle.fcd1be7104610a924f9b.png",
+    "static/media/girl1.jpg": "/sentiron-landing/static/media/girl1.be44c5e3681945132d2f.jpg",
+    "static/media/girl2.jpg": "/sentiron-landing/static/media/girl2.d5313aabdb41d1402b94.jpg",
     "index.html": "/sentiron-landing/index.html",
-    "main.0cf4c450.css.map": "/sentiron-landing/static/css/main.0cf4c450.css.map",
-    "main.2f4b0f91.js.map": "/sentiron-landing/static/js/main.2f4b0f91.js.map"
+    "main.33e9f60f.css.map": "/sentiron-landing/static/css/main.33e9f60f.css.map",
+    "main.a360d47f.js.map": "/sentiron-landing/static/js/main.a360d47f.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cf4c450.css",
-    "static/js/main.2f4b0f91.js"
+    "static/css/main.33e9f60f.css",
+    "static/js/main.a360d47f.js"
   ]
 }
