@@ -1,11 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// import components
-import Nav from './Nav';
-
-// import icons 
 import { HiMenu } from 'react-icons/hi';
+import Nav from './Nav';
 
 const Header = ({ setNavMobile }) => {
   return (
@@ -25,7 +21,7 @@ const Header = ({ setNavMobile }) => {
           {/* nav */}
           <Nav />
           {/* nav mobile btn */}
-          <HiMenu onClick={() => setNavMobile(true)} 
+          <HiMenu onClick={() => setNavMobile(prev => !prev)} 
           className='lg:hidden text-3xl text-black cursor-pointer' />
         </div>
       </div>

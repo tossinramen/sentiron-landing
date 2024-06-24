@@ -13,7 +13,14 @@ const Nav = () => {
             ABOUT US
           </NavLink>
         </li>
-        <li className='nav-link'><a href="#">EXPERTS</a></li>
+        <li className='nav-link'>
+          <NavLink 
+            to="/experts"
+            className={({ isActive }) => isActive ? 'active-nav-link' : 'inactive-nav-link'}
+          >
+            EXPERTS
+          </NavLink>
+        </li>
         <li className='btn'><a href="#" className='text-white'>GET SENTIRON</a></li> 
       </ul>
     </nav>

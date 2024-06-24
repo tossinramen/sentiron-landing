@@ -126,7 +126,7 @@ const CoreMission = () => {
                       Revitalize your skin with tailored routines and luxurious treatments, revealing its natural radiance for a refreshed and rejuvenated look.
                     </span>
                   </div>
-                  <img src={girl1} alt='Makeup' className='mt-4 w-[300px] h-[300px] object-cover' style={{ marginTop: '30px' }} />
+                  <img src={girl1} alt='Makeup' className='mt-4 w-[300px] h-[300px] object-cover' style={{ marginTop: '60px' }} />
                 </div>
                 <div className='w-[300px] flex flex-col items-center justify-center'>
                   <div className='flex flex-col items-center' style={{ minHeight: '150px' }}>
@@ -169,7 +169,7 @@ const CoreMission = () => {
         </section>
 
         {/* Explore Section */}
-        <Explore />
+        
       </div>
     </div>
   );
