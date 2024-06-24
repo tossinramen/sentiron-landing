@@ -21,7 +21,14 @@ const Nav = () => {
             EXPERTS
           </NavLink>
         </li>
-        <li className='btn'><a href="#" className='text-white'>GET SENTIRON</a></li> 
+        <li className='btn'>
+          <NavLink 
+            to="/signup-signin" 
+            className='text-white'
+          >
+            GET SENTIRON
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

@@ -2,20 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Banner from './components/Banner';
 import Header from './components/Header';
-import NavMobile from './components/NavMobile';
 import CoreMission from './components/CoreMission';
 import Explore from './components/Explore';
 import AboutUs from './components/AboutUs';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import ComingSoon from './components/ComingSoon';
 import Experts from './components/Experts';
+import SignupSignin from './components/SignupSignin';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const App = () => {
-  const [navMobile, setNavMobile] = useState(false);
-
   useEffect(() => {
     Aos.init({
       duration: 2500,
@@ -26,8 +24,7 @@ const App = () => {
   return (
     <Router>
       <div className='relative overflow-hidden w-full'>
-        <Header setNavMobile={setNavMobile} />
-        {navMobile && <NavMobile setNavMobile={setNavMobile} />}
+        <Header />
         <Routes>
           <Route path="/" element={<>
             <Banner />
@@ -38,6 +35,7 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/coming-soon" element={<ComingSoon />} />
           <Route path="/experts" element={<Experts />} />
+          <Route path="/signup-signin" element={<SignupSignin />} />
         </Routes>
       </div>
     </Router>
